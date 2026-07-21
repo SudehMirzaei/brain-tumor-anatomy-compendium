@@ -595,6 +595,34 @@ These features distinguish meningiomas from gliomas with high diagnostic value.
 - MRI typically demonstrates an **extra-axial**, **well-circumscribed**, **homogeneously enhancing** mass with a **dural tail** and **CSF cleft**.
 - CNN models should learn anatomical location, border characteristics, enhancement pattern, and compressive morphology rather than relying solely on tumor size.
 
+## Pituitary Tumor
+
+Pituitary tumors arise from the **pituitary gland**, the master endocrine gland responsible for regulating multiple endocrine organs, including the thyroid, adrenal glands, ovaries, and testes. Because the pituitary gland is located within the **sella turcica**, a saddle-shaped bony cavity in the sphenoid bone at the skull base, the tumor is almost always centered in this anatomical region. Consequently, **location within the sella turcica is the single most important MRI feature** for identifying pituitary tumors and serves as the primary feature that a CNN should learn for accurate classification.
+
+Unlike gliomas and meningiomas, pituitary tumors may produce both **local neurological symptoms** and **systemic endocrine disorders**. Functional pituitary adenomas secrete excessive hormones, whereas non-functional tumors primarily cause symptoms by compressing surrounding structures. Hormone-secreting tumors include **prolactinomas** (causing infertility, galactorrhea, menstrual irregularities, and decreased libido), **growth hormone (GH)-secreting tumors** (causing gigantism or acromegaly), and **ACTH-secreting tumors** (causing Cushing's disease with weight gain, hypertension, diabetes mellitus, muscle weakness, and skin thinning). These hormone-mediated systemic effects distinguish pituitary tumors from other common brain tumors.
+
+One of the hallmark neurological complications is **compression of the optic chiasm**, located immediately above the pituitary gland. As the tumor enlarges superiorly beyond the sella turcica, it compresses the optic chiasm, producing **bitemporal hemianopsia**, characterized by loss of peripheral vision in both eyes while central vision remains relatively preserved. Patients frequently report bumping into objects or people approaching from either side. Because prolonged compression may result in irreversible optic nerve damage and permanent blindness, prompt diagnosis and treatment are essential.
+
+Large pituitary tumors may also compress and destroy the normal pituitary gland, resulting in **hypopituitarism**. Reduced secretion of pituitary hormones can lead to hypothyroidism (TSH deficiency), secondary adrenal insufficiency (ACTH deficiency), and hypogonadism with infertility (LH and FSH deficiency). Among these complications, cortisol deficiency is the most critical because it can precipitate a life-threatening adrenal crisis.
+
+### MRI Features for CNN Classification
+
+For MRI-based classification, a CNN should primarily recognize the characteristic anatomical location and growth pattern of pituitary tumors.
+
+**Key imaging features include:**
+- Tumor centered within the **sella turcica** (most important feature).
+- Located immediately posterior to the **sphenoid sinus**.
+- Superior extension producing the classic **snowman (figure-of-eight) appearance**.
+- Well-defined margins.
+- Enlargement of the sella turcica with possible invasion of the **cavernous sinus**.
+- Compression of the optic chiasm.
+- Internal heterogeneity due to solid, cystic, or hemorrhagic components.
+- Pituitary macroadenomas (>1 cm) are commonly visible because of their larger size.
+- Prominent gadolinium enhancement that is generally **less intense and less homogeneous than meningiomas** because of internal tumor heterogeneity.
+
+These characteristic anatomical and imaging features make pituitary tumors readily distinguishable from gliomas and meningiomas and provide highly discriminative features for CNN-based MRI classification.
+
+
 
 # Repository Goal
 
