@@ -595,93 +595,295 @@ These features distinguish meningiomas from gliomas with high diagnostic value.
 - MRI typically demonstrates an **extra-axial**, **well-circumscribed**, **homogeneously enhancing** mass with a **dural tail** and **CSF cleft**.
 - CNN models should learn anatomical location, border characteristics, enhancement pattern, and compressive morphology rather than relying solely on tumor size.
 
-## Pituitary Tumor: The Sella Turcica Occupant
+# Pituitary Tumor
 
-Pituitary tumors are defined by their location: they are the **occupants of the sella turcica**. This anatomical origin is their single most defining characteristic, setting them apart from both the intra-axial glioma and the extra-axial meningioma. Their clinical story is unique, combining the effects of a growing mass with the systemic consequences of a malfunctioning master endocrine gland.
+## Overview
 
-###  Origin: A Tumor of the Master Gland
+Pituitary tumors are primary tumors arising from the **pituitary gland**, the body's master endocrine gland located within the **sella turcica** at the skull base.
 
-- **Cell of Origin:** Pituitary tumors arise from the cells of the **pituitary gland**.
-- **The Master Endocrine Gland:** The pituitary gland is the body's "master gland," secreting hormones that control the thyroid, adrenal glands, ovaries, and testes.
-- **The Sella Turcica:** The gland resides in the **sella turcica**, a saddle-shaped bony depression in the sphenoid bone at the base of the skull. A pituitary tumor, therefore, is an occupant of this specific bony cavity.
-- **Critical Distinction:** This is the key differentiator for a CNN. Unlike a glioma (intra-axial, in the brain tissue) or a meningioma (extra-axial, on the brain's surface), a pituitary tumor is centered in the sella.
+Unlike **gliomas**, which originate within the brain parenchyma, and **meningiomas**, which arise from the meninges, pituitary tumors are centered within the **sellar region**. Their clinical presentation is unique because they may produce symptoms through both **hormonal dysfunction** and **compression of adjacent anatomical structures**.
 
 ---
 
-### A Dual Mechanism of Disease: Hormonal Chaos & Local Compression
+# Origin
 
-Pituitary tumors cause symptoms through two distinct and equally important mechanisms, a unique feature among the three tumor types.
+Pituitary tumors arise from the **hormone-producing cells of the pituitary gland**.
 
-#### Part 1: The Systemic Storm (Functional Tumors)
-Some pituitary tumors are **functional**, meaning they secrete excessive hormones. This creates a "systemic storm" with effects far beyond the brain. **Non-functional** tumors, in contrast, do not secrete excess hormones and cause symptoms only through local compression.
+The pituitary gland regulates multiple endocrine organs through hormone secretion, including the:
 
-- **Prolactinoma (Excess Prolactin):**
-    - Infertility
-    - Galactorrhea (inappropriate milk production)
-    - Menstrual irregularities and decreased libido
-- **Growth Hormone (GH)-Secreting Tumor:**
-    - **Gigantism:** Excessive linear growth before growth plate closure (in children).
-    - **Acromegaly:** Enlargement and thickening of hands, feet, jaw, and nose (in adults).
-- **ACTH-Secreting Tumor (Cushing's Disease):**
-    - Excess cortisol production leads to weight gain (face and abdomen), hypertension, diabetes, muscle weakness, and skin thinning.
-- **Key Insight:** This hormonal activity is a profound difference from gliomas and meningiomas, which cause only local structural effects.
+- Thyroid gland
+- Adrenal glands
+- Ovaries
+- Testes
 
-#### Part 2: The Compressive Triad
-As the tumor grows, it compresses vital adjacent structures, producing a classic triad of neurological symptoms.
+Anatomically, the gland is located within the **sella turcica**, a saddle-shaped depression of the sphenoid bone at the skull base.
 
-1.  **Optic Chiasm Compression: The Hallmark Emergency**
-    - **Mechanism:** The optic chiasm (the X-shaped crossing of optic nerve fibers) lies directly above the pituitary gland. Upward tumor growth compresses these fibers.
-    - **Visual Deficit:** This produces **bitemporal hemianopsia**, a classic and devastating pattern of vision loss.
-        - **Bi-:** Both eyes.
-        - **Temporal:** The outer (temporal) visual fields.
-        - **Hemianopsia:** Loss of half the visual field.
-    - **Real-World Consequence:** Patients lose their peripheral vision ("tunnel vision"). They frequently bump into objects or people and fail to notice things approaching from the side.
-    - **Emergency:** Prolonged compression causes irreversible nerve damage and permanent blindness. This is a clinical emergency.
-
-2.  **Hypopituitarism: The Silent Gland Failure**
-    - **Mechanism:** The growing tumor mass compresses and destroys the normal pituitary gland, leading to a partial or complete loss of normal hormone production.
-    - **Resulting Deficiencies:**
-        - **TSH Deficiency:** Leads to hypothyroidism (fatigue, cold intolerance, weight gain).
-        - **LH/FSH Deficiency:** Leads to hypogonadism (infertility, menstrual irregularities, decreased libido).
-        - **ACTH Deficiency:** This is the most life-threatening component. A lack of ACTH causes **secondary adrenal insufficiency**, where the body cannot produce cortisol in response to stress. This can lead to an **adrenal crisis**, characterized by severe hypotension, shock, and death if untreated.
-
-3.  **Cavernous Sinus Syndrome**
-    - **Mechanism:** Large tumors can grow laterally and invade the **cavernous sinuses**, venous spaces on either side of the sella.
-    - **Contents Affected:**
-        - Cranial Nerves III (oculomotor), IV (trochlear), and VI (abducens), which control eye movements.
-        - Branches of CN V (trigeminal), for facial sensation.
-        - The internal carotid artery.
-    - **Symptoms:** This invasion can cause diplopia (double vision), restricted eye movements, a drooping eyelid (ptosis), and facial numbness.
+Because these tumors originate from the pituitary gland itself, they are classified as **sellar tumors** rather than **intra-axial** or **extra-axial** brain tumors.
 
 ---
 
-## The CNN's Diagnostic Lens: Anatomy of the Sella
+# Why Pituitary Tumors Are Different
 
-A Convolutional Neural Network (CNN) must learn that location is everything for this tumor. It's about the anatomy of the skull base, not just the brain tissue.
+The defining characteristic of pituitary tumors is their combination of **endocrine dysfunction** and **localized compression**.
 
-### 1. Location, Location, Location: Centered in the Sella
-- **Feature:** A mass precisely centered within the **sella turcica**.
-- **Visual & Anatomical Landmarks:**
-    - The tumor sits immediately **posterior to the sphenoid sinus**, an air-filled cavity that serves as a key anatomical waypoint.
-    - This intrasellar origin is the single most important diagnostic feature, immediately differentiating it from intra-axial and other extra-axial tumors.
+Unlike:
 
-### 2. The Snowman (Figure-of-Eight) Configuration
-- **Feature:** A characteristic shape caused by growth against a dural barrier.
-- **Visual:** As a **macroadenoma** (>1 cm) grows superiorly, it squeezes through the small opening in the **diaphragma sellae** (the dural roof of the sella). It gets constricted at this point, creating a "waist," and expands again above it. This results in the classic **snowman or figure-of-eight appearance** on coronal images.
+- **Gliomas**, which infiltrate brain tissue
+- **Meningiomas**, which primarily compress the brain surface
 
-### 3. Border and Invasiveness
-- **Well-Defined Border:** A pituitary tumor typically has a clear, well-circumscribed margin, making it distinct from the infiltrative glioma.
-- **Bony Sella Invasion:** Unlike other tumors, a pituitary tumor's "invasiveness" is often into bone. It can erode, remodel, and expand the bony walls of the sella turcica.
-- **Cavernous Sinus Engulfment:** A CNN must learn to identify tumor tissue that extends laterally to completely surround and engulf the cavernous sinus's internal carotid artery, a sign of a locally invasive macroadenoma.
+pituitary tumors usually remain confined to the **sellar region** while affecting nearby structures and altering hormone production.
 
-### 4. Heterogeneity & Contrast Enhancement
-- **Feature:** A variable, often non-uniform internal appearance and enhancement pattern.
-- **Visual:**
-    - **Heterogeneous Architecture:** The tumor may contain a mix of solid tissue, cystic (fluid-filled) areas, and hemorrhagic (blood) components.
-    - **Vivid but Less Intense Enhancement:** After contrast administration, a pituitary tumor enhances vividly and becomes clearly visible. However, its enhancement is typically **less intensely bright and less homogeneous** than the uniformly blazing enhancement of a meningioma. The presence of cysts or hemorrhage creates a patchy enhancement pattern.
+Depending on hormonal activity, pituitary tumors are classified as:
+
+- **Functional tumors** (hormone-secreting)
+- **Non-functional tumors** (non-secreting)
+
+### Functional Tumors
+Produce excessive hormone secretion and lead to endocrine syndromes.
+
+### Non-Functional Tumors
+Do not secrete hormones and primarily produce symptoms through **mass effect**.
 
 ---
-*In summary, the key story for the CNN is a mass centered in the sella turcica, posterior to the sphenoid sinus, with a potential snowman shape, causing local compressive and systemic endocrine effects.*
+
+# Clinical Effects
+
+Pituitary tumors produce symptoms through two major mechanisms:
+
+1. Hormonal hypersecretion
+2. Local compression
+
+---
+
+## Hormonal Hypersecretion
+
+Functional pituitary tumors may secrete excessive hormones, producing characteristic endocrine syndromes.
+
+### Prolactin-Secreting Tumors
+
+Excess prolactin may cause:
+
+- Galactorrhea
+- Menstrual irregularities
+- Infertility
+- Decreased libido
+
+---
+
+### Growth Hormone-Secreting Tumors
+
+Excess growth hormone may produce:
+
+- Gigantism in children
+- Acromegaly in adults
+- Enlargement of the hands, feet, and jaw
+
+---
+
+### ACTH-Secreting Tumors
+
+Excess ACTH stimulates cortisol production and causes **Cushing disease**, characterized by:
+
+- Weight gain
+- Hypertension
+- Diabetes mellitus
+- Muscle weakness
+- Thin, fragile skin
+
+---
+
+## Local Compression
+
+### Optic Chiasm Compression
+
+As pituitary tumors enlarge superiorly, they commonly compress the **optic chiasm**.
+
+Typical manifestations include:
+
+- Bitemporal hemianopsia
+- Progressive peripheral vision loss
+- Blurred vision
+
+Untreated compression may lead to **permanent visual impairment**.
+
+---
+
+### Hypopituitarism
+
+Large tumors may compress the normal pituitary gland and reduce hormone production.
+
+Hormone deficiencies may produce:
+
+- Hypothyroidism
+- Adrenal insufficiency
+- Hypogonadism
+- Fatigue
+- Infertility
+- Hypotension
+
+> **Note:** Severe ACTH deficiency may result in a life-threatening **adrenal crisis**.
+
+---
+
+### Cavernous Sinus Compression
+
+Lateral tumor extension may involve the **cavernous sinus**.
+
+Compression of cranial nerves **III, IV, V, and VI** may produce:
+
+- Diplopia
+- Ptosis
+- Restricted eye movements
+- Facial numbness
+
+---
+
+### Headache
+
+Expansion of the sellar contents stretches the surrounding dura and increases local pressure.
+
+Patients commonly experience:
+
+- Persistent headache
+- Retro-orbital pain
+
+---
+
+# MRI Features of Pituitary Tumors
+
+Recognizing the characteristic MRI appearance of pituitary tumors is essential for both radiologists and CNN-based classification.
+
+---
+
+## 1. Sellar Location
+
+The single most important imaging feature is the tumor's **sellar location**.
+
+The lesion is centered within the **sella turcica**, immediately superior to the **sphenoid sinus**.
+
+This anatomical position differentiates pituitary tumors from:
+
+- **Glioma** (intra-axial)
+- **Meningioma** (extra-axial)
+
+---
+
+## 2. Suprasellar Extension
+
+Large pituitary tumors frequently grow superiorly beyond the sella.
+
+This may produce:
+
+- Compression of the optic chiasm
+- Elevation of the diaphragma sellae
+- Compression of the third ventricle (in very large tumors)
+
+---
+
+## 3. Snowman (Figure-of-Eight) Appearance
+
+Pituitary macroadenomas commonly develop the characteristic **snowman** or **figure-of-eight** configuration.
+
+As the tumor expands through the diaphragma sellae, constriction at the diaphragmatic opening produces a narrow waist between the **intrasellar** and **suprasellar** components.
+
+This is one of the classic MRI appearances of a **pituitary macroadenoma**.
+
+---
+
+## 4. Contrast Enhancement
+
+Pituitary tumors usually enhance following **gadolinium administration**.
+
+MRI commonly demonstrates:
+
+- Moderate to strong enhancement
+- Mildly heterogeneous enhancement
+- Less homogeneous enhancement than meningioma
+
+Larger tumors may contain:
+
+- Cystic degeneration
+- Hemorrhage
+
+These features contribute to heterogeneous enhancement.
+
+---
+
+## 5. Well-Circumscribed Borders
+
+Pituitary tumors usually demonstrate:
+
+- Smooth margins
+- Well-defined borders
+- Rounded morphology
+
+Unlike gliomas, pituitary tumors generally **do not infiltrate adjacent brain tissue**.
+
+---
+
+## 6. Sellar Expansion and Cavernous Sinus Invasion
+
+Large pituitary tumors may produce:
+
+- Expansion of the sella turcica
+- Remodeling of the sphenoid bone
+- Extension into the cavernous sinus
+- Encasement of the internal carotid artery
+
+These findings suggest a **locally invasive macroadenoma**.
+
+---
+
+## 7. Internal Heterogeneity
+
+Large tumors may contain multiple internal components, including:
+
+- Solid tumor tissue
+- Cystic degeneration
+- Hemorrhage
+
+These changes create a **heterogeneous internal MRI appearance**.
+
+---
+
+# CNN-Relevant MRI Features
+
+A CNN trained for pituitary tumor recognition should learn to identify:
+
+- Sellar location
+- Relationship to the sphenoid sinus
+- Suprasellar extension
+- Optic chiasm compression
+- Snowman (figure-of-eight) configuration
+- Well-defined borders
+- Sellar enlargement
+- Cavernous sinus invasion
+- Internal heterogeneity
+- Moderate heterogeneous contrast enhancement
+
+> These anatomical features are considerably more informative than tumor size alone.
+
+---
+
+# Key Takeaways
+
+- Pituitary tumors originate from the **pituitary gland** within the **sella turcica**.
+- Their hallmark biological characteristics are **hormonal dysfunction** and **local compression**.
+- MRI typically demonstrates a **sellar mass**, often with:
+  - Suprasellar extension
+  - Snowman configuration
+  - Well-defined borders
+  - Contrast enhancement
+- Large tumors may compress the **optic chiasm** or invade the **cavernous sinus**.
+- CNN models should prioritize:
+  - Anatomical location
+  - Sellar morphology
+  - Enhancement pattern
+  - Internal heterogeneity
+  - Adjacent structural relationships
+
+rather than relying solely on tumor presence or size.
+
 
 # Repository Goal
 
