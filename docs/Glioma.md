@@ -1,6 +1,6 @@
 # 🧠 Glioma
 
-← [MRI Sequences](01_MRI_Sequences.md) | → [Meningioma](03_Meningioma.md)
+← [MRI Sequences](MRI_Sequences.md) | → [Meningioma](Meningioma.md)
 
 ---
 
@@ -291,5 +291,5 @@ Destroying these relationships may prevent the model from learning important ima
 
 ## Next Chapter
 
-➡️ [Meningioma](03_Meningioma.md)
+➡️ [Meningioma](Meningioma.md)
 
