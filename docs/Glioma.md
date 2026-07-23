@@ -88,6 +88,8 @@ Consequences include:
 - Increased intracranial pressure (ICP)
 - Compression of nearby brain tissue
 
+> [cerebral_swelling_img](images/cerebral_swelling.jpg)
+
 ---
 
 # Increased Intracranial Pressure (ICP)
@@ -158,7 +160,7 @@ This differentiates them from:
 - Meningioma (extra-axial)
 - Pituitary tumor (sellar)
 
-> *(Insert MRI demonstrating an intra-axial glioma here.)*
+> [intra_axial_img](images/intra_axial_glioma.jpg)
 
 ---
 
@@ -168,7 +170,7 @@ Aggressive gliomas frequently spread across the corpus callosum.
 
 This creates the classic **Butterfly Glioma**, one of the strongest imaging clues for glioblastoma.
 
-> *(Insert Butterfly Glioma MRI here.)*
+> [butterfly_glioma_img](images/butterfly_glioma.jfif)
 
 ---
 
@@ -183,7 +185,7 @@ High-grade gliomas commonly contain:
 
 Multiple tissue types coexist within the same lesion.
 
-> *(Insert heterogeneous GBM MRI here.)*
+> [Heterogeneity_img](images/necrotic_core.jpg)
 
 ---
 
@@ -196,7 +198,6 @@ Following gadolinium administration:
 
 This produces the characteristic **thick irregular ring-enhancing lesion**.
 
-> *(Insert post-contrast MRI here.)*
 
 ---
 
@@ -210,7 +211,8 @@ Glioma-associated edema is typically:
 
 These findings often extend well beyond the visible tumor.
 
-> *(Insert T2/FLAIR MRI showing edema here.)*
+> [vasogenic_edema_1_img](images/vasogenic_edema_1.jpg)
+> [vasogenic_edema_2_img](images/vasogenic_edema_2.jpg)
 
 ---
 
