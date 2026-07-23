@@ -119,6 +119,8 @@ Clinical manifestations include:
 
 Untreated compression may result in **permanent visual impairment**.
 
+[optic-chiasm_img](../images/pituitary/optic_chiasm.jpg)
+
 ---
 
 ### Hypopituitarism
@@ -179,7 +181,8 @@ This differentiates pituitary tumors from:
 - **Glioma** (intra-axial)
 - **Meningioma** (extra-axial)
 
-📷 **Suggested figure:** Pituitary macroadenoma within the sella turcica.
+[sellar_location_1_img](../images/pituitary/sellar_location_1.jpg)
+[sellar_location_2_img](../images/pituitary/sallar_location_2.jpg)
 
 ---
 
@@ -193,7 +196,7 @@ This may produce:
 - Elevation of the diaphragma sellae
 - Compression of the third ventricle (very large tumors)
 
-📷 **Suggested figure:** MRI showing suprasellar extension.
+[suprasellar_img](../images/pituitary/suprasellar.jpg)
 
 ---
 
@@ -205,7 +208,6 @@ As the tumor expands through the diaphragma sellae, constriction at the diaphrag
 
 This is one of the classic MRI appearances of a **pituitary macroadenoma**.
 
-📷 **Suggested figure:** Snowman-shaped pituitary macroadenoma.
 
 ---
 
