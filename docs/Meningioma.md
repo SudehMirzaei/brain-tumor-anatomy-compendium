@@ -157,7 +157,7 @@ Typical locations include:
 - Cerebral convexity
 - Skull base
 
-📷 **Suggested figure:** Extra-axial meningioma on axial MRI.
+[extra_axial_img](../images/meningioma/extra-axial.jpg)
 
 ---
 
@@ -169,7 +169,7 @@ After gadolinium administration, the adjacent dura enhances, forming a tapering 
 
 Although not present in every case, it strongly favors the diagnosis of meningioma.
 
-📷 **Suggested figure:** Contrast-enhanced MRI demonstrating the dural tail.
+[dural_tail_img](../images/meningioma/dural_tail.jpg)
 
 ---
 
@@ -218,7 +218,7 @@ This **CSF cleft** is one of the classic MRI signs of an extra-axial tumor.
 
 Its presence strongly favors meningioma over glioma.
 
-📷 **Suggested figure:** MRI showing the CSF cleft.
+[csf_cleft_img](../images/meningioma/CSF-cleft.jpg)
 
 ---
 
