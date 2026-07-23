@@ -88,7 +88,7 @@ Consequences include:
 - Increased intracranial pressure (ICP)
 - Compression of nearby brain tissue
 
-> [cerebral_swelling_img](brain-tumor-anatomy-compendium/tree/main/images/glioma/cerebral_swelling.jpg)
+> [cerebral_swelling_img](../images/glioma/cerebral_swelling.jpg)
 
 ---
 
@@ -160,7 +160,7 @@ This differentiates them from:
 - Meningioma (extra-axial)
 - Pituitary tumor (sellar)
 
-> [intra_axial_img](brain-tumor-anatomy-compendium/tree/main/images/glioma/intra_axial_glioma.jpg)
+> [intra_axial_img](../images/glioma/intra_axial_glioma.jpg)
 
 ---
 
@@ -170,7 +170,7 @@ Aggressive gliomas frequently spread across the corpus callosum.
 
 This creates the classic **Butterfly Glioma**, one of the strongest imaging clues for glioblastoma.
 
-> [butterfly_glioma_img](brain-tumor-anatomy-compendium/tree/main/images/glioma/butterfly_glioma.jfif)
+> [butterfly_glioma_img](../images/glioma/butterfly_glioma.jfif)
 
 ---
 
@@ -185,7 +185,7 @@ High-grade gliomas commonly contain:
 
 Multiple tissue types coexist within the same lesion.
 
-> [Heterogeneity_img](brain-tumor-anatomy-compendium/tree/main/images/glioma/necrotic_core.jpg)
+> [Heterogeneity_img](../images/glioma/necrotic_core.jpg)
 
 ---
 
@@ -211,8 +211,8 @@ Glioma-associated edema is typically:
 
 These findings often extend well beyond the visible tumor.
 
-> [vasogenic_edema_1_img](brain-tumor-anatomy-compendium/tree/main/images/glioma/vasogenic_edema_1.jpg)
-> [vasogenic_edema_2_img](brain-tumor-anatomy-compendium/tree/main/images/glioma/vasogenic_edema_2.jpg)
+[vasogenic_edema_1_img](../images/glioma/vasogenic_edema_1.jpg)
+[vasogenic_edema_2_img](../images/glioma/vasogenic_edema_2.jpg)
 
 ---
 
